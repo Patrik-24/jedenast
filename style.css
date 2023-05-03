@@ -1,0 +1,427 @@
+:root {
+    --transition: all 0.9s linear;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./backgrey.jpg");
+}
+.container {
+    display: flex;
+}
+.box-film {
+    display: flex;
+    border-radius: 1rem 1rem;
+    position: relative;
+    padding: 2.6rem;
+}
+.btnD {
+    position: absolute;
+    
+}
+.cont-film {
+    background-color: white;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.upr-img {
+    border-radius: 1rem 1rem;
+    width: 8rem;
+    float: left;
+    padding: 0.5rem;
+}
+.art-con {
+    display: flex;
+    padding: 5rem;
+    width: 80vh;
+}
+.p-style {
+    font-family: 'Sofia Sans', sans-serif;
+    letter-spacing: 0.25px;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 1rem;
+}
+.p-name {
+    font-family: 'Rubik Gemstones', cursive;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 1rem;
+}
+.nadpis {
+    color: rgb(79, 79, 79);
+    font-size: 25px;
+    margin: 0px 259px;
+}
+.p-style::first-letter {
+    font-size: 2rem;
+}
+.clickB {
+    margin: 1rem;
+    text-decoration: none;
+    background: rgb(189, 189, 189);
+    color: black;
+    padding: 0.3rem;
+    border-radius: 2rem;
+}
+.clickB:hover {
+    color: white;
+    background-color: darkblue;
+}
+i {
+    margin: 20px 40px;
+}
+section {
+    margin: 3% 3%;
+}
+/* NavBar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 7%;
+    position: relative;
+    border-bottom: 2px solid;
+    background: linear-gradient(to right, white, gray);
+}
+.logoImg {
+    width: 20%;
+}
+.logo {
+    display: flex;
+}
+.hNav {
+    margin-top: 1.4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2c2c2c;
+}
+.rebricek {
+    text-decoration: none;
+    color: black;
+}
+.rebricek:hover {
+    color: #2c2c2c;
+}
+.hamb {
+    display: none;
+}
+.rebrice {
+    text-decoration: none;
+    color: black;
+}
+.hra {
+    display: none;
+    transition: var(--transition);
+}
+/* MEDIA QUERY */
+@media (max-width: 1000px) {
+    .rebricek {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 0.8rem;
+    }
+    .hamb {
+        display: none;
+    }
+}
+@media (max-width: 655px) {
+   .rebricek {
+    display: none;
+   }
+   .divider {
+    display: none;
+   }
+   .hamb {
+    display: block;
+    margin-top: 0.1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    color: rgb(70, 70, 70);
+    }
+    /* otvarac */
+    .noBtn {
+        display: grid;
+    }
+    .hra {
+        display: block;
+        position: relative;
+        font-size: 2rem;
+        background: rgb(253, 255, 238);
+    }
+    .lin {
+        border-bottom: solid;
+    }
+    .lin:hover {
+        background: grey;
+    }
+    
+    #toggle-content {
+        display: none; /* skryť obsah na začiatku */
+    }
+  
+    #toggle-content.show {
+        display: block; /* zobraziť obsah po kliknutí */
+    }
+}
+.tables {
+    margin-top: 5rem;
+    margin-left: 35%;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-right: 1%;
+}
+  
+button {
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    background: none;
+}
+  
+button:hover {
+    transform: scale(1.1);
+}
+
+.divider {
+    height: 25px;
+    border-left: 1px solid #454545;
+    border-right: 1px solid #454545;
+    margin: 0 10px;
+}
+.baner {
+    width: 1050px;
+    height: 600px;
+    margin: 0px auto;
+    background-image: url(reactor.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /*border: 4px solid #333;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #333;*/
+    border: none;
+    position: relative;
+    transition: .3s;
+    top: 2rem;
+}
+.baner:before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    padding: 10px; 
+    background: conic-gradient(
+          #ff53bb ,
+          #0000 30deg 120deg,
+          #00f8d3 150deg 180deg,
+          #0000 210deg 300deg,
+          #ff53bb 330deg
+      );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: intersect
+}
+.baner:before {
+    background-color: #222;
+    border: 2px solid #333;
+}
+  
+.baner>img{
+    left: -2px;
+    position: relative;
+    top: 2px;
+    width: 594px;
+    opacity:0.9;
+}
+.opFilm {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.stlu {
+    margin: 0 auto;
+}
+.nadpisdva {
+    text-transform: uppercase;
+    background: linear-gradient(to right, #b0096d, #08a089);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    text-shadow: 2px 2px black;
+}
+#banerId {
+    position: absolute;
+    top: 85%;
+    left: 48%;
+    transform: translate(-50%, 10%);
+    background: #000;
+    color: white;
+    padding: 0.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#banerId:hover {
+    box-shadow: 2px 2px #00f8d3;
+}
+.fontBaner {
+    padding: 10px;
+    font-family: 'Rubik Gemstones', cursive;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+
+/* TOOLTIP */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    width: 30vh;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, visibility 0s linear 1.5s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out, visibility 0s linear;
+}
+.tooltip .tooltiptext img {
+    width: 100%;
+}
+
+/* FOOTER */
+.end-city {
+    height: 20rem;
+    display: grid;
+    background: rgb(33, 33, 33);
+}
+.contain {
+    /*background: blue;*/
+    display: flex;
+    border-top: 2px dashed grey;
+}
+.first {
+    /*background: green;*/
+    height: 18rem;
+    width: 33.33%;
+    color: white;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik Gemstones', cursive;
+}
+.ipt {
+    width: 20rem;
+}
+.contacted {
+    margin-top: 2.5rem;
+}
+.second {
+    /*background: yellow;*/
+    height: 18rem;
+    width: 33.34%;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 2.5;
+}
+.tlacidloo {
+    margin-top: 1rem;
+    border-radius: 10rem;
+    padding: 0.3rem 0.3rem;
+    border: 1px solid grey;
+    font-family:'Courier New', Courier, monospace;
+}
+.forest {
+    /*background: pink;*/
+    height: 18rem;
+    width: 33.33%;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+
+}
+.forest h3 {
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+.end-photo {
+    border-top: 1px solid white;
+    border-radius: 50%;
+    width: 90%;
+    margin-left: 5%;
+}
+.last-logo {
+    margin-left: 40%;
+}
+.social-media {
+    font-size: 2.5rem;
+    color: white;
+}
+.social-media:first-child {
+    color: grey;
+}
+.social-media:nth-child(2) {
+    color: grey;
+}
+.social-media:last-child {
+    color: grey;
+}
+.soc-med {
+    flex-direction: row;
+    margin-top: 1rem;
+    word-spacing: 1rem;
+}
+@media only screen and (max-width: 500px) {
+    .first {
+        display: none;
+    }
+    .second {
+        width: 100%;
+    }
+    .end-city {
+        display: flex; 
+        height: 40rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .forest {
+        width: 100%;
+    }
+    .contain {
+        display: block;
+    }
+}

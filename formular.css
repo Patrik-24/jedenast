@@ -1,0 +1,210 @@
+.formular {
+    display: block;
+    border: 2px dashed black;
+    background: #c7c7c7;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+input {
+    margin: 8px ;
+
+}
+textarea {
+    margin: 8px;
+}
+.nay {
+    margin-left: 0.8rem;
+}
+.textik {
+    margin-left: 0.8rem;
+    margin-bottom: -0.2rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+input[required] {
+  border-color: #ff9800;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=date]:hover {
+  border-color: #888;
+}
+
+.nastavovac {
+    display: flex;
+}
+.nastv {
+    display: grid;
+    margin-left: 1.8rem;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=date]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px #4CAF50;
+}
+.subm {
+    width: 20rem;
+    margin-left: 9.7%;
+    background: yellow;
+}
+.subm:hover {
+    background: #ff9800;
+}
+.square {
+    position: relative;
+    margin: 3rem 47%;
+    animation-name: square;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.square1 {
+    width: 60px;
+    height: 60px;
+    border: 10px solid green;
+    position: absolute;
+    left: 25px;
+    z-index: 10;
+    animation-name: squaree;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.square2 { 
+    width: 60px;
+    height: 60px;
+    border: 10px solid red;
+    position: absolute;
+    top: 25px;
+    z-index: 20;
+    animation-name: squareee;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.square3 {
+    width: 60px;
+    height: 60px;
+    border: 10px solid blue;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    z-index: 30;
+    animation-name: squareeee;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.square4 {
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ff9800;
+    position: absolute;
+    z-index: 40;
+    animation-name: squareeeee;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes square {
+    0% {
+        left: 0;
+    }
+    25% {
+        right: 25px;
+    }
+    50% {
+        right: 0;
+    }
+    75% {
+        left: 25px;
+    }
+    100% {
+        left: 0;
+    }
+
+}
+@keyframes squaree {
+    0% {
+        border: 10px solid green;
+    }
+    25% {
+        border: 10px solid red;
+    }
+    50% {
+        border: 10px solid blue;
+    }
+    75% {
+        border: 10px solid #ff9800;
+    }
+    100% {
+        border: 10px solid green;
+    }
+
+}
+@keyframes squareee {
+    0% {
+        border: 10px solid blue;
+    }
+    25% {
+        border: 10px solid green;
+    }
+    50% {
+        border: 10px solid red;
+    }
+    75% {
+        border: 10px solid #ff9800;
+    }
+    100% {
+        border: 10px solid blue;
+    }
+
+}
+@keyframes squareeee {
+    0% {
+        border: 10px solid red;
+    }
+    25% {
+        border: 10px solid blue;
+    }
+    50% {
+        border: 10px solid #ff9800;
+    }
+    75% {
+        border: 10px solid green;
+    }
+    100% {
+        border: 10px solid red;
+    }
+
+}
+@keyframes squareeeee {
+    0% {
+        border: 10px solid #ff9800;
+    }
+    25% {
+        border: 10px solid blue;
+    }
+    50% {
+        border: 10px solid green;
+    }
+    75% {
+        border: 10px solid red;
+    }
+    100% {
+        border: 10px solid #ff9800;
+    }
+
+}

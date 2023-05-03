@@ -1,0 +1,32 @@
+table, th, td {
+    border: 1px solid black;
+}
+.poradie {
+    text-align: right;
+    background-image: url("./");
+}
+tr {
+    background-color: aliceblue;
+}
+tr:nth-child(even) {
+    background-color: rgb(167, 167, 167);
+}
+.film-box {
+    display: flex;
+}
+.film-move {
+    margin-left: 10%;
+    width: 550px;
+}
+.hlavicka {
+    background: grey;
+    color: aliceblue;
+}
+.podTb {
+    display: block;
+    position: relative;
+    margin: 10px 420px;
+}
+.ere {
+    margin: 1px 175px;
+}
